@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     ImageView i,i2;
+    Button b2,b3;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -21,10 +22,25 @@ public class MainActivity extends AppCompatActivity {
 
         i=findViewById(R.id.Image_One);
         i2=findViewById(R.id.Image_two);
+        b2= findViewById(R.id.btn1);
+        b3=findViewById(R.id.btn2);
 
         Bundle b = new Bundle();
         b.putString("birdName", "Peacock");
-        Intent i =new Intent(MainActivity.this, SecondActivity.class);
-        startActivity(i, b);
+        //Intent i =new Intent(MainActivity.this, SecondActivity.class);
+        //startActivity(i, b);
+
+        b2.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplication(), SecondActivity.class);
+            startActivity(intent);
+        });
+        b3.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplication(), ThirdActivity.class);
+            startActivity(intent);
+        });
+
+
+
+
     }
 }

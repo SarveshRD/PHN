@@ -22,5 +22,23 @@
             android:src="@drawable/baseline_handshake_24"
             android:layout_gravity="center"
             android:layout_margin="12dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:text="Button"
+            android:id="@+id/btn1"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:text="search-box-btn"
+            android:id="@+id/btn2"
+            tools:ignore="MissingConstraints" />
     </LinearLayout>
 </RelativeLayout>

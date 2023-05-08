@@ -4,15 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondActivity">
+    android:orientation="vertical"
+    tools:context=".ThirdActivity">
 
-    <Button
-        android:layout_width="wrap_content"
+
+    <SearchView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:textSize="30dp"
-        android:text="Button"
-        android:id="@+id/btn"
-        tools:ignore="MissingConstraints" />
+        android:queryHint="Search Here"
+        android:id="@+id/sv"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        />
 
 </LinearLayout>
